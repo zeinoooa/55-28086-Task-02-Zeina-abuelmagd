@@ -71,4 +71,7 @@ public class SocialGraphService {
     public List<Map<String, Object>> getRecommendations(String personName, int limit) {
         return neo4jGraphRepository.getRecommendations(personName, limit);
     }
+
+    public void addPurchase(String s, String name) {
+    }
 }

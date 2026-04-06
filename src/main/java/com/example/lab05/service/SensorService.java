@@ -52,4 +52,7 @@ public class SensorService {
     public List<SensorReading> getLatestReadings(String sensorId, int limit) {
         return cassandraQueryRepository.findLatestReadings(sensorId, limit);
     }
+
+    public void recordReading(String sensorId, String name) {
+    }
 }

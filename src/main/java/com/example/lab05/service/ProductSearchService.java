@@ -47,4 +47,7 @@ public class ProductSearchService {
                                         int page, int size) {
         return elasticSearchQueryRepository.search(query, category, minPrice, maxPrice, page, size);
     }
+
+    public void save(ProductDocument esProduct) {
+    }
 }
